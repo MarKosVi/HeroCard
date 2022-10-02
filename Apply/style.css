@@ -1,0 +1,54 @@
+
+body {
+    width: 90%;
+    padding: 10px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+#logo {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 25%;
+    margin: 0 50px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    justify-items: center;
+    align-self: center;
+    width: 70%;
+}
+
+.card-init {
+    display: flex;
+    border: 1px solid black;
+    border-radius: 10px;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    width: 50%;
+    cursor: pointer;
+
+}
+
+.on {
+    background-color: rgb(232, 235, 103);
+    font-weight: 400;
+}
+
+
+#person {
+    width: 30%;
+    box-shadow: 0 0 0.5em rgb(130, 112, 160);
+    margin: 5px;
+}
