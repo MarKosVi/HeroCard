@@ -6,15 +6,15 @@ buttonSelect.forEach((item)=>{
     item.addEventListener('click', ()=>{
         removeOn();
         item.classList.toggle('on');
-        tradePhoto(item.childNodes[0].nodeValue);
+        tradePhoto(item.id);
     });
 });
 
 
 function tradePhoto(atribute) {
-    if(atribute == 'Hero Costume ')
+    if(atribute == 'hero')
         imgPerson.setAttribute('src', './assets/personHero.png');
-    if(atribute == 'School Uniform ')
+    if(atribute == 'normal')
         imgPerson.setAttribute('src', './assets/person.png');
 }
 
