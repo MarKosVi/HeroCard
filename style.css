@@ -4,6 +4,32 @@ body {
     padding: 10px;
 }
 
+.fundo{
+    background-image: url('./assets/fundo.jpg');
+    width: 90%;
+}
+
+.infos {
+    z-index: -5;
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    width: 35vw;
+    min-width: 350px;
+}
+
+.textD{
+    padding: 15px;
+    margin-left: 25px;
+}
+
+.principal{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+
+}
+
 
 main {
     display: flex;
@@ -33,30 +59,31 @@ main {
 
 .on {
     background-color: rgb(232, 235, 103);
-    font-weight: 400;
+    font-weight: bold;
 }
 
 
 #person {
-    width: 50%;
+    width: 100%;
     min-width: 300px;
     margin: 5px;
+    position: relative;
 }
 
 .hero{
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    justify-content:space-around;
+
 }
 
 .photo_hero{
     display: flex;
-    width: 50%;
+    width: 35vw;
     flex-direction: column;
-    align-items: center;
-
+    align-items: flex-start;
 }
 
 
@@ -65,12 +92,14 @@ main {
     width: 70%;
     flex-direction: row;
     justify-content:flex-start;
+    font-size: 20px;
 
 }
 
 .card-init {
     display: flex;
     border: 1px solid black;
+    font-weight: bold;
     border-radius: 10px;
     flex-direction: column;
     text-align: center;
@@ -79,3 +108,26 @@ main {
     width: 100%;
     cursor: pointer;
 }
+
+
+
+@media only screen and (min-width: 600px) {
+    
+    
+    .photo_hero{
+        display: flex;
+        width: 55vw;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .infos {
+        z-index: -5;
+        display: flex;
+        flex-direction: column;
+        background-color: aqua;
+        width: 30vw;
+        min-width: 350px;
+    }
+
+  }
