@@ -5,7 +5,7 @@ body {
 }
 
 .fundo{
-    background-image: url('./assets/fundo.jpg');
+    background-image: url('./assets/fundo.png');
     width: 90%;
 }
 
@@ -54,6 +54,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-self: center;
     justify-content:space-between;
 }
 
@@ -61,7 +62,7 @@ main {
     display: flex;
     width: 50%;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
 
 }
 
@@ -86,4 +87,28 @@ main {
     margin: 10px;
     width: 100%;
     cursor: pointer;
+}
+
+.principal {
+    display: flex;
+    justify-content: center;
+}
+
+
+.infos{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+    background-color: aliceblue;
+    padding: 15px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.box {
+    align-items: flex-start;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
 }
